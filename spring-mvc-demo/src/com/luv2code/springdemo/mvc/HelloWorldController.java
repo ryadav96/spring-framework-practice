@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+@RequestMapping("/hello")
 @Controller
 public class HelloWorldController {
 
@@ -50,7 +51,7 @@ public class HelloWorldController {
 		theName = theName.toUpperCase();
 		
 		//create the message
-		String result = "HEY! "+ theName;
+		String result = "HEY yyy! "+ theName;
 		
 		//add message sto the model
 		model.addAttribute("message", result);
